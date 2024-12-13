@@ -4,6 +4,7 @@ export default createGlobalStyle`
     
     :root {
         --font: #FFFFFF;
+        --font_highlight: #838391;
         --background: #070724
     }
     
@@ -17,7 +18,7 @@ export default createGlobalStyle`
         background-color: var(--background);
     }
 
-    h1, h2, h3, h4, p {
+    h1, h2, h3, h4, p, a {
         color: #FFFFFF;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -27,7 +28,7 @@ export default createGlobalStyle`
 
     h1, h2 {
         font-family: "Antonio", serif;
-        font-weight: medium;
+        font-weight: 400;
     }
 
     h1 {
@@ -36,15 +37,15 @@ export default createGlobalStyle`
     }
 
     h2 {
-        font-size: 2.5rem;
+        font-size: 1.8;
         letter-spacing: -1.5px;
-        line-height: 6.25rem;
     }
 
-    h3, h4 {
+    h3, h4{
         font-family: "League Spartan", serif;
         font-weight: 700;
         line-height: 1.6rem;
+        text-decoration: none;
     }
 
     h3 {
