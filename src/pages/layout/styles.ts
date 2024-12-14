@@ -14,6 +14,24 @@ export const Header = styled.header`
         cursor: pointer;
     }
 
+    @media only screen and (min-width: 769px) {
+        justify-content: space-between;
+        align-items: center;
+        
+        height: 4rem;
+        padding: 0 1rem;
+    }
+
+    @media only screen and (min-width: 426px) and (max-width: 768px) {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        
+        height: 7rem;
+        padding-top: 1rem;
+
+    }
+
     @media only screen and (max-width: 425px) {
         padding: 0 1rem;
         height: 4rem;
@@ -24,11 +42,21 @@ export const Header = styled.header`
             display: flex;
         }
     }
+
 `
 
 export const Nav = styled.nav<{isOpen: boolean}>`
     svg {
         display: none;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+
+        font-family: "League Spartan", serif;
+        font-weight: 500;
+        text-decoration: none;
     }
 
     @media only screen and (max-width: 425px) {
@@ -38,7 +66,7 @@ export const Nav = styled.nav<{isOpen: boolean}>`
         transform: translate(-50% -50%);
         top: 101%;
         left: 0;
-        height: ${p => p.isOpen ? 'calc(100vh - .5rem)' : "0"} ;
+        height: ${p => p.isOpen ? 'calc(100vh - 4rem)' : "0"} ;
         width: 100vw;
         overflow: hidden;
         transition: height .3s ease;
@@ -71,7 +99,56 @@ export const Nav = styled.nav<{isOpen: boolean}>`
                 }
             }
         }
+    }
 
+    @media only screen and (min-width: 426px) and (max-width: 768px) {
+        ul {
+            display: flex;
+            width: 25rem;
+            justify-content: space-between;
+            list-style: none;
+
+            li {
+                height: 2.5rem;
+
+                a {
+                    height: 100%;
+                    display: flex;
+                    align-items: top;
+
+                    font-size: .75rem;
+
+                    &.active {
+                        border-bottom: 2px solid #FFF;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 769px) {
+        ul {
+            display: flex;
+            width: 25rem;
+            justify-content: space-between;
+            list-style: none;
+
+            li {
+                height: 4rem;
+
+                a {
+                    height: 100%;
+                    display: flex;
+                    align-items: top;
+
+                    font-size: .75rem;
+
+                    &.active {
+                        border-bottom: 2px solid #FFF;
+                    }
+                }
+            }
+        }
     }
 `
 
