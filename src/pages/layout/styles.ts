@@ -18,7 +18,7 @@ export const Header = styled.header`
         justify-content: space-between;
         align-items: center;
         
-        height: 4rem;
+        height: 5rem;
         padding: 0 1rem;
     }
 
@@ -129,19 +129,19 @@ export const Nav = styled.nav<{isOpen: boolean}>`
     @media only screen and (min-width: 769px) {
         ul {
             display: flex;
-            width: 25rem;
+            width: 35rem;
             justify-content: space-between;
             list-style: none;
 
             li {
-                height: 4rem;
+                height: 5rem;
 
                 a {
                     height: 100%;
                     display: flex;
                     align-items: top;
 
-                    font-size: .75rem;
+                    font-size: .85rem;
 
                     &.active {
                         border-bottom: 2px solid #FFF;

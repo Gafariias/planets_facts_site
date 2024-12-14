@@ -16,6 +16,12 @@ export default createGlobalStyle`
 
     body {
         background-color: var(--background);
+       
+        background-image: url(/background-stars.svg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     h1, h2, h3, h4, p, a {

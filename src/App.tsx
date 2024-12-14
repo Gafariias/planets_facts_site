@@ -25,6 +25,7 @@ function App() {
           <Route path="uranus" element={<UranusPage/>} />
           <Route path="neptune" element={<NeptunePage/>} />
           <Route path="*" element={<Navigate replace to="/earth"/>} />
+          <Route index element={<Navigate replace to="/earth"/>} />
         </Route>
       </Routes>
     </BrowserRouter>
