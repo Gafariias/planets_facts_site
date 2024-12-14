@@ -5,7 +5,7 @@ export default createGlobalStyle`
     :root {
         --font: #FFFFFF;
         --font_highlight: #838391;
-        --background: #070724
+        --background: #070724;
     }
     
     * {
