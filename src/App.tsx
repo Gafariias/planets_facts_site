@@ -10,21 +10,14 @@ import JupiterPage from "./pages/jupiterPage"
 import SaturnPage from "./pages/saturnPage"
 import UranusPage from "./pages/uranusPage"
 import NeptunePage from "./pages/neptunePage"
+import PlanetPage from "./pages/planetPage"
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="mercury" element={<MercuryPage />} />
-          <Route path="venus" element={<VenusPage />} />
-          <Route path="earth" element={<EarthPage />} />
-          <Route path="mars" element={<MarsPage/>} />
-          <Route path="jupiter" element={<JupiterPage/>} />
-          <Route path="saturn" element={<SaturnPage/>} />
-          <Route path="uranus" element={<UranusPage/>} />
-          <Route path="neptune" element={<NeptunePage/>} />
-          <Route path="*" element={<Navigate replace to="/earth"/>} />
+          <Route path=":planetName" element={<PlanetPage />} />
           <Route index element={<Navigate replace to="/earth"/>} />
         </Route>
       </Routes>
