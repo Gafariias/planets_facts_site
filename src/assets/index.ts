@@ -1,8 +1,3 @@
-// Icons
-import IconChevron from './icons/icon-chevron.svg'
-import IconHamburger from './icons/icon-hamburger.svg'
-import IconSource from './icons/icon-source.svg'
-
 // Planets
 import Earth from './planets/planet-earth.svg'
 import EarthInternal from './planets/planet-earth-internal.svg'
@@ -31,15 +26,7 @@ import SaturnGeology from "./geology/geology-saturn.png"
 import UranusGeology from "./geology/geology-uranus.png"
 import VenusGeology from "./geology/geology-venus.png"
 
-// Background
-import BGStars from './background/background-stars.svg'
-
 export default {
-    icons: {
-        chevron: IconChevron,
-        hamburger: IconHamburger,
-        source: IconSource
-    },
     planets: {
         earth: Earth,
         mars: Mars,
@@ -70,8 +57,5 @@ export default {
         saturn: SaturnGeology,
         uranus: UranusGeology,
         venus: VenusGeology
-    },
-    background: {
-        stars: BGStars
     }
 }

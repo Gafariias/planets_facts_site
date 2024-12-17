@@ -5,6 +5,7 @@ export default createGlobalStyle`
     :root {
         --font: #FFFFFF;
         --font_highlight: #838391;
+        --border: #38384F;
         --background: #070724;
     }
     
@@ -39,7 +40,7 @@ export default createGlobalStyle`
 
     h1 {
         font-size: 5rem;
-        line-height: 6.44rem;
+        line-height: 4.5rem;
     }
 
     h2 {
@@ -62,11 +63,60 @@ export default createGlobalStyle`
     h4 {
         font-size: .69rem;
         letter-spacing: .2px;
+        color: var(--font_highlight);
     }
 
-    p {
+    p, span {
         font-family: "League Spartan", sans-serif;
-        font-size: .75rem;
         line-height: 1.6rem;
+        font-weight: 300;
     }
+
+    @media only screen and (max-width: 425px) {
+        h1 {
+            font-size: 12.5vw;
+        }
+        
+        p {
+            font-size: 3.5vw;
+        }
+    }
+
+    img {
+        margin: 2rem 0;
+        @media only screen and (max-width: 425px) {
+        
+            &.mercury {
+                width: 25vw;
+            }
+
+            &.venus {
+                width: 35vw;
+            }
+            
+            &.earth {
+                width: 45vw;
+            }
+
+            &.mars {
+                width: 30vw;
+            }
+
+            &.jupiter {
+                width: 55vw;
+            }
+
+            &.saturn {
+                width: 60vw;
+            }
+
+            &.uranus {
+                width: 50vw;
+            }
+
+            &.neptune {
+                width: 50vw;
+            }
+        }
+    }   
 `

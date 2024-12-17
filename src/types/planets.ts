@@ -11,6 +11,7 @@ type planetsTS = {
 
 export interface planet {
     name: string,
+    color: string,
     overview: {
       content: string;
       source: string
