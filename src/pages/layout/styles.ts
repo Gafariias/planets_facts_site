@@ -63,6 +63,7 @@ export const Nav = styled.nav<{isOpen: boolean}>`
         position: absolute;
         display: flex;
         align-items: center;
+        z-index: 50;
         transform: translate(-50% -50%);
         top: 101%;
         left: 0;
